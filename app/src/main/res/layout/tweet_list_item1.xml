@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgImage1"
+            android:layout_width="104dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="-20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.039"
+            app:srcCompat="@drawable/image1" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@+id/imgImage1"
+            app:layout_constraintTop_toTopOf="@+id/imgImage1"
+            tools:text="Mercy Yugi"
+            tools:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tvNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvName"
+            app:layout_constraintStart_toEndOf="@+id/tvName"
+            app:layout_constraintTop_toTopOf="@+id/tvName"
+            tools:text="mercy@achy" />
+
+        <ImageView
+            android:id="@+id/imgVerified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvNickname"
+            app:layout_constraintStart_toEndOf="@+id/tvNickname"
+            app:layout_constraintTop_toTopOf="@+id/tvNickname"
+            app:srcCompat="@drawable/ic_baseline_verified_user_24" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="#FB0202"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgVerified"
+            app:layout_constraintStart_toEndOf="@+id/imgVerified"
+            app:layout_constraintTop_toTopOf="@+id/imgVerified"
+            tools:text="10/10/2020" />
+
+        <TextView
+            android:id="@+id/tvAkirachix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#03A9F4"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgImage1"
+            app:layout_constraintStart_toEndOf="@+id/imgImage1"
+            app:layout_constraintTop_toTopOf="@+id/imgImage1"
+            app:layout_constraintVertical_bias="0.269"
+            tools:text="#AKIRACHIX" />
+
+        <TextView
+            android:id="@+id/tvChallenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#03A9F4"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAkirachix"
+            tools:text="#30DaysOfCode" />
+
+        <TextView
+            android:id="@+id/tvDescribe"
+            android:layout_width="312dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.828"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvChallenge"
+            tools:text="My day today was interesting. Ilearnt how to use recycler views and card views.It was a very fun and interactive exercise. You should also learn it. KOTLIN IS EVERYTHING TO ME RIGHT NOW." />
+
+        <ImageView
+            android:id="@+id/imgComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvComment"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescribe"
+            app:srcCompat="@drawable/ic_baseline_message_24" />
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgComment"
+            app:layout_constraintEnd_toStartOf="@+id/imgRetweet"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgComment"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescribe"
+            tools:text="2000" />
+
+        <ImageView
+            android:id="@+id/imgRetweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvComment"
+            app:layout_constraintEnd_toStartOf="@+id/tvRetweet"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvComment"
+            app:layout_constraintTop_toTopOf="@+id/tvComment"
+            app:srcCompat="@drawable/ic_baseline_repeat_24" />
+
+        <TextView
+            android:id="@+id/tvRetweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgRetweet"
+            app:layout_constraintEnd_toStartOf="@+id/imgLike"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgRetweet"
+            app:layout_constraintTop_toTopOf="@+id/imgRetweet"
+            tools:text="3000" />
+
+        <ImageView
+            android:id="@+id/imgLike"
+            android:layout_width="19dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgRetweet"
+            app:layout_constraintEnd_toStartOf="@+id/tvLike"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvRetweet"
+            app:layout_constraintTop_toTopOf="@+id/imgRetweet"
+            app:srcCompat="@drawable/ic_baseline_thumb_up_24" />
+
+        <TextView
+            android:id="@+id/tvLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgLike"
+            app:layout_constraintEnd_toStartOf="@+id/imgDownload"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgLike"
+            app:layout_constraintTop_toTopOf="@+id/imgLike"
+            tools:text="20000" />
+
+        <ImageView
+            android:id="@+id/imgDownload"
+            android:layout_width="16dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgLike"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvLike"
+            app:layout_constraintTop_toTopOf="@+id/imgLike"
+            app:srcCompat="@drawable/ic_baseline_download_for_offline_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
